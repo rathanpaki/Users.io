@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Profiles</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: black;
+        color: white;
+        margin: 0;
+      }
+      #profiles {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 20px;
+      }
+      .user-profile {
+        background-color: #333333b2;
+        border-radius: 10px;
+        padding: 20px;
+        width: 300px;
+        text-align: center;
+        color: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+      }
+      .user-profile img {
+        border-radius: 50%;
+        margin-bottom: 20px;
+      }
+      #fetch_users {
+        margin-top: 20px;
+        padding: 10px 20px;
+        background-color: rgba(128, 128, 128, 0.534);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+      #fetch_users:hover {
+        background-color: #df7575;
+      }
+      table {
+        width: 80%;
+        margin-top: 20px;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+      }
+      th {
+        background-color: #555555c2;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="profiles"></div>
+    <table id="table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <button id="fetch_users">More Users</button>
+    <script src="script.js"></script>
+  </body>
+</html>
